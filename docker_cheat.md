@@ -13,8 +13,8 @@
         RUN pip install -r requirements.txt
         COPY . /code
 
-4. poetry export -o requirements.txt -without-hashes
-(if that doesn't work, poetry export -o requirements.txt) Code should like like this:
+4. poetry export -o requirements.txt --without-hashes
+(if that doesn't work, poetry export -h for help) Code should like like this:
 
         asgiref==3.4.0; python_version >= "3.6"
         django==3.2.4; python_version >= "3.6"
@@ -22,7 +22,7 @@
         pytz==2021.1; python_version >= "3.6"
         sqlparse==0.4.1; python_version >= "3.6"
 
-5. make docker-compose.yml at root tevel:
+5. touch docker-compose.yml at root tevel:
 
         version: '3'
         services:
@@ -38,4 +38,13 @@
 
 7. docker-compose up
 
-8. docker-compose up --build, if you need to rebuild.
+8. docker-compose up --build, if you need to rebuild. Docker containers are ephemeral.
+
+### Additional commands
+
+9. docker-compose down
+10. add -h flag for help
+11. docker-compose up --detach - runs containers in background, doesn't take up an entire server
+12. docker-compose run web python manage.py makemigrations
+13. docker-compose run web python manage.py migrate
+14. docker-compose run web python manage.py createsuperuser

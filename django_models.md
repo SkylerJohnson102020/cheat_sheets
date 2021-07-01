@@ -1,7 +1,7 @@
 # Models
 
 1. Go to models.py at app level.
-2. Create your model Example:
+2. Create your model. example below:
 
         from django.db import models
         from django.contrib.auth import get_user_model
@@ -14,7 +14,7 @@
             updated_at = models.DateTimeField(auto_now=True)
 
             def __str__(self):
-                return self.trail_name (whatever you want here. return self.name[:50] for first 50 chars.)
+                return self.trail_name (example: return self.name[:50] for first 50 chars.)
 
 3. python manage.py makemigrations
 4. python manage.py migrate
