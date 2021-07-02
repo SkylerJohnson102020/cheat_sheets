@@ -1,4 +1,8 @@
-Deploy Project - Heroku Time
+# Deploy Project - Heroku
+
+### Documentation
+https://devcenter.heroku.com/articles/heroku-cli
+
 install heroku cli
 heroku apps:create snacks-api
 Check remote with git remote -v
