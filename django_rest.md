@@ -48,7 +48,7 @@
 
         class HikeSerializer(ModelSerializer):
             class Meta:
-                fields = ('id', 'author', 'trail_name', 'description', 'created_at')
+                fields = ('id', 'author', 'trail_name', 'description', 'created_at') <----(put `__all__` if all fields desired.)
                 model = Hike
 
 
@@ -150,3 +150,5 @@
         STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 8. docker-compose run web python manage.py collectstatic
+9. `python -c “import secrets; print(secrets.token_urlsafe())"` to generate secret key.
+
