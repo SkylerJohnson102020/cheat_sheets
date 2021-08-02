@@ -48,4 +48,4 @@
 12. docker-compose run web python manage.py makemigrations
 13. docker-compose run web python manage.py migrate
 14. docker-compose run web python manage.py createsuperuser
-15. docker compose run web python manage.py collectstatic (for whitenoise)
+15. docker-compose run web python manage.py collectstatic 

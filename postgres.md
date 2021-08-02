@@ -1,6 +1,6 @@
 # Postgres
 
-Make sure Docker is set up in project. It is a good rule of thumb to get everything working on sqllite3 before switching to postgres.
+Make sure Docker is set up in project. It is a good rule of thumb to get everything working on sqlite3 before switching to postgres.
 
 1. docker-compose.yml should look like:
 
