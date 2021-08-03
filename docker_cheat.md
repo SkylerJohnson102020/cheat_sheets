@@ -14,7 +14,7 @@
         COPY . /code
 
 4. poetry export -o requirements.txt --without-hashes
-(if that doesn't work, poetry export -h for help) Code should like like this:
+(if that doesn't work, poetry export -h for help) Code should like:
 
         asgiref==3.4.0; python_version >= "3.6"
         django==3.2.4; python_version >= "3.6"
