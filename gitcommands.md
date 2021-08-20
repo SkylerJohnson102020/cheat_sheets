@@ -2,8 +2,14 @@
 
 ### SSH Keys
 
-1. ssh-keygen -t rsa -b 4096 -C "bob@loblaw.com"
-2. Type in file to save the key (/Users/myname/.ssh/id_rsa):
+1. First things first, type in:
+
+        ssh-keygen -t rsa -b 4096 -C "bob@loblaw.com"
+
+2. Type in file to save the key 
+
+        (/Users/myname/.ssh/id_rsa):
+
 3. Enter passphrase, leave empty and press enter if you do not want a passphrase.
 4. You will see something like this:
 
@@ -77,13 +83,19 @@
           UseKeychain yes
           IdentityFile ~/.ssh/id_ed25519
 
-17. Once you've pasted the above, press ctrl-x, y, then enter. 
+17. Once you've pasted the above:
 
-18. Give it a test, enter: ssh -T git@github.com
+        press ctrl-x, then y, then enter. 
+
+18. Give it a little test, enter: 
+
+        ssh -T git@github.com
 
 19. You should see:
 
         Hi Bob Loblaw! You've successfully authenticated, but GitHub does not provide shell access.
+
+
 
 20. Whenever you want to clone down a repo, make sure you select the SSH option. Each repo will need the key added otherwise you may see this error:
 
@@ -99,3 +111,4 @@
 
             Mac:
                 ssh-add -K
+
