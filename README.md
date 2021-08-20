@@ -8,6 +8,6 @@ Then you're in luck! Welcome to my collection of cheat sheets! Please feel free 
 
 Skyler Johnson
 
-Happy coding fellow software nerds!
+Happy coding my fellow software nerds!
 
 ![Conan](https://media.giphy.com/media/3ohzdTEcKJqFZm8swg/giphy.gif?cid=ecf05e479je5dge8b3icy9o5xkgdt8ts53dn414hyydstape&rid=giphy.gif&ct=g)
