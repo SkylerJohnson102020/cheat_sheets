@@ -14,13 +14,14 @@
             updated_at = models.DateTimeField(auto_now=True)
 
             def __str__(self):
-                return self.trail_name (example: return self.name[:50] for first 50 chars.)
+                return self.trail_name #(example: return self.name[:50] for first 50 chars.)
 
 3. python manage.py makemigrations
 4. python manage.py migrate
 5. Go to admin.py to register model:
 
         from .models import 'Model name'
+        from django.contrib import admin
 
         admin.site.register(Model name)
 
