@@ -48,7 +48,7 @@
 
         class HikeSerializer(ModelSerializer):
             class Meta:
-                fields = ('id', 'author', 'trail_name', 'description', 'created_at') <----(put `__all__` if all fields desired.)
+                fields = ('id', 'author', 'trail_name', 'description', 'created_at') #<----(put `__all__` if all fields desired.)
                 model = Hike
 
 
@@ -71,14 +71,14 @@
         from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
         from .serializers import HikeSerializer
         from .models import Hike
-        from .permissions import IsAuthorOrReadOnly <----- UPDATE
+        from .permissions import IsAuthorOrReadOnly #<----- UPDATE
 
         class HikeList(ListCreateAPIView):
             queryset = Hike.objects.all()
             serializer_class = HikeSerializer
 
         class HikeDetail(RetrieveUpdateDestroyAPIView):
-            permission_classes = (IsAuthorOrReadOnly,) <---- UPDATE. NOTE: the comma used to set tuple.
+            permission_classes = (IsAuthorOrReadOnly,) #<---- UPDATE. NOTE: the comma used to set tuple.
             queryset = Hike.objects.all()
             serializer_class = HikeSerializer
 
@@ -142,7 +142,7 @@
 
         MIDDLEWARE = [
             'django.middleware.security.SecurityMiddleware',
-            'whitenoise.middleware.WhiteNoiseMiddleware', <-------- Make sure this appear on 2ND LINE!!
+            'whitenoise.middleware.WhiteNoiseMiddleware', #<-------- Make sure this appear on 2ND LINE!!
             ........
 
 7. Still in settings.py, add this underneath STATIC_URL near bottom:
