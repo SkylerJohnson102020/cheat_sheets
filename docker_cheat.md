@@ -49,3 +49,5 @@
 13. docker-compose run web python manage.py migrate
 14. docker-compose run web python manage.py createsuperuser
 15. docker-compose run web python manage.py collectstatic 
+
+Every time a docker-compose down is run, you have to re-migrate and createsuperuser again. Make sure you run docker-compose up --build

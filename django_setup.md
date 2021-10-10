@@ -1,5 +1,7 @@
 # Django setup steps
 
+Note: Before you make any commits, make sure to update .env info and secure your settings.py.
+
 1. mkdir 'name'
 2. cd into new folder
 3. poetry init -n
